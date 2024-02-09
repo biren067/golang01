@@ -1,4 +1,4 @@
-package main
+package api
 
 import "github.com/gin-gonic/gin"
 
@@ -6,7 +6,7 @@ type Greeting struct {
 	Message string `json:"message"`
 }
 
-func main() {
+func init() {
 	r := gin.Default()
 
 	// Define route for the /hello endpoint
